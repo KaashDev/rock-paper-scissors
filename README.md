@@ -1,1 +1,1 @@
-Odin Rock Paper Scissors
+Odin rock paper scissors
