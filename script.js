@@ -58,3 +58,26 @@ function playRound(humanChoice, computerChoice){
     }
 }
 
+function playGame(){
+
+    for(let i=0; i<5; i++){
+        let computerChoice = getComputerChoice().toLowerCase();
+        let humanChoice = getHumanChoice().toLowerCase();
+        playRound(humanChoice, computerChoice)
+    }
+
+    console.log("Your Score: " + humanScore);
+    console.log("Computer's Score: " + computerScore);
+
+    if(humanScore > computerScore){
+        console.log("YOU WON THE MATCH ;)");
+    }
+    else if (humanScore < computerScore){
+        console.log("YOU LOST THE MATCH :(");
+    }
+    else{
+        console.log("THE MATCH IS A DRAW ;/");
+    }
+}
+
+playGame();
