@@ -63,6 +63,7 @@ function playRound(humanChoice, computerChoice){
     const winner = humanScore === 5 ? "You win the game!" : "Computer wins the game";
     const final = document.createElement("p");
     final.textContent = winner;
+    final.classList.add("final");
     result.appendChild(final);
 }
 }
